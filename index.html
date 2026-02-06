@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Plombier Urgence 66 – Intervention 24h/24</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plombier en urgence dans les Pyrénées-Orientales (66). Intervention rapide 24h/24 et 7j/7. Appel immédiat.">
+
+  <!-- Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-169744"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-169744');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') window.location = url;
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-169744/CONVERSION_LABEL',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Plombier Urgence 66</h1>
+  <p>Intervention rapide 24h/24 et 7j/7 dans tout le département des Pyrénées-Orientales</p>
+
+  <div class="cta">
+    <a href="tel:+33600000000" class="btn btn-call" onclick="gtag_report_conversion()">📞 Appeler maintenant</a>
+    <a href="#devis" class="btn btn-devis">📝 Devis immédiat</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Interventions rapides dans le 66</h2>
+    <p>
+      Débouchage, fuite d’eau, WC bouché, chauffe-eau, robinetterie.
+      Intervention sur Perpignan, Canet-en-Roussillon, Argelès-sur-Mer,
+      Saint-Cyprien et tout le département 66.
+    </p>
+  </section>
+
+  <section class="card" id="devis">
+    <h2>Demande de devis – Rappel rapide</h2>
+
+    <form id="leadForm">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="tel" name="phone" placeholder="Votre téléphone" required>
+      <textarea name="message" placeholder="Décrivez votre problème" required></textarea>
+
+      <button type="submit" class="btn btn-devis">Envoyer la demande</button>
+    </form>
+
+    <p id="formStatus"></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="https://hydrodebouchage.fr/privacy-policy/" target="_blank">CGV</a>
+  <a href="https://hydrodebouchage.fr/mentions-legales/" target="_blank">Mention légales</a>
+  <a href="https://hydrodebouchage.fr/contact-plombier/" target="_blank">Nos partenaires</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
